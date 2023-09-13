@@ -35,7 +35,7 @@ fs.readdirSync(__dirname + "/lib/db/").forEach((db) => {
   }
 });
 
-let cc = config.SESSION_ID.replace(/Asena~;;;/g, "");
+let cc = config.SESSION_ID.replace(/Asena;;;/g, "");
 async function MakeSession(){
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
     if(cc.length<30){
